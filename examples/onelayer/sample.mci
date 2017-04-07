@@ -1,0 +1,115 @@
+##########################################
+# Sample.mci
+# 	A template for input files for MCML.
+#	Any characters following a # are ignored as comments
+#	Space lines are also ignored.
+#	Lengths are in cm, mua and mus are in 1/cm.
+#
+#	Multiple runs may be stipulated.
+##########################################
+
+1.0                      	# file version
+1                       	# number of runs
+
+#### SPECIFY DATA FOR RUN 1
+#InParm                    	# Input parameters. cm is used.
+sample.txt 	A            	# output file name, format: A ASCII, B binary.
+10000000                  	# No. of photons
+17182818                  	# seed for random generation.
+0.1	0.1    0.1    0.1# dx, dy, dz, dr [cm]
+1.0   1.0	1.0   1         # size of tissue in x, y, z direction (cm) and number of da's.
+
+0.0 0.0 0.0                 # source position
+0.0 0.0 1                   # source direction
+3   0.1 0.22                # source type; 0: pencil beam, 1: disc distribution with parameters raduis,
+                            # 2: gaussian beam with parameters raduis
+
+7   0.1 0.22      	        # No. of detectors, raduis of detectors [cm].
+0.5 0                       # det. 1 x, y position [cm].
+1.0 0                       # det. 2 x, y position [cm].
+1.5 0                       # det. 3 x, y position [cm].
+2.0 0                       # det. 4 x, y position [cm].
+2.5 0                       # det. 5 x, y position [cm].
+3.0 0                       # det. 6 x, y position [cm].
+3.5 0                       # det. 7 x, y position [cm].
+                            # det. 8 x, y position [cm].
+                            # det. 9 x, y position [cm].
+                            # det. 10 x, y position [cm].
+                            
+                            
+1                        	# Number of layers
+#n	mua	mus	g	d         	# One line for each layer
+1                         	# n for medium above
+1.37	0.1	100	0.9	1    	# layer 1
+#1.37	0.01	1.0	0.9	0.5 # layer 2
+#1.37	0.2	100	0.9	0.5  	# layer 3
+1                        	# n for medium below
+
+1                           # 1 save specular reflectance. [-].
+1                           # 1 save 2D (raduis & angle) distribution of diffuse reflectance. [1/(cm2 sr)].*/
+1                           # 1 save 1D (raduis) radial distribution of diffuse reflectance for each layer. [1/cm2].*/
+1                           # 1 save 1D radial distribution of diffuse reflectance. [1/cm2].*/
+1                           # 1 save diffuse reflectance for each detector. [1/cm2].*/
+1                           # 1 save 1D angular distribution of diffuse reflectance. [1/sr].*/
+1                           # 1 save total diffuse reflectance. [-].*/
+1                           # 1 save 3D probability density in turbid media over x, y & z. [1/cm3].*/
+1                           # 1 save 2D probability density in turbid media over r & z. [1/cm3].*/
+1                           # 1 save 1D probability density over z. [1/cm].*/
+1                           # 1 save each layer's absorption probability. [-].*/
+1                           # 1 save total absorption probability. [-].*/
+1                           # 1 save 2D distribution of total transmittance. [1/(cm2 sr)].*/
+1                           # 1 save 1D radial distribution of transmittance. [1/cm2].*/
+1                           # 1 save transmittance for each detector. [1/cm2].*/
+1                           # 1 save 1D angular distribution of transmittance. [1/sr].*/
+1                           # 1 save total transmittance. [-].*/
+1                           # 1 save tracing of photons that detected.*/
+1                           # 1 save PPL.*/
+
+#### SPECIFY DATA FOR RUN 2
+#InParm                    	# Input parameters. cm is used.
+sample2.txt 	A         	# output file name, ASCII.
+1000000                  	# No. of photons
+17182818                  	# seed for random generation.
+0.01	0.01    0.01    0.01# dx, dy, dz, dr [cm]
+4.0   4.0	1.0   1         # size of tissue in x, y, z direction (cm) and number of da's.
+
+7   0.1            	        # No. of detectors, raduis of detectors [cm].
+0.5 0                       # det. 1 x, y position [cm].
+1.0 0                       # det. 2 x, y position [cm].
+1.5 0                       # det. 3 x, y position [cm].
+2.0 0                       # det. 4 x, y position [cm].
+2.5 0                       # det. 5 x, y position [cm].
+3.0 0                       # det. 6 x, y position [cm].
+3.5 0                       # det. 7 x, y position [cm].
+                            # det. 8 x, y position [cm].
+                            # det. 9 x, y position [cm].
+                            # det. 10 x, y position [cm].
+
+                            
+3                        	# Number of layers
+#n	mua	mus	g	d         	# One line for each layer
+1                         	# n for medium above
+1.37	1	10	0.9	0.1    	# layer 1
+1.37	1	10	0.0	0.1   	# layer 2
+1.37	2	100	0.7	0.2  	# layer 3
+1                        	# n for medium below
+
+1                           # 1 save specular reflectance. [-].
+1                           # 1 save 2D (raduis & angle) distribution of diffuse reflectance. [1/(cm2 sr)].*/
+1                           # 1 save 1D (raduis) radial distribution of diffuse reflectance for each layer. [1/cm2].*/
+1                           # 1 save 1D radial distribution of diffuse reflectance. [1/cm2].*/
+1                           # 1 save diffuse reflectance for each detector. [1/cm2].*/
+1                           # 1 save 1D angular distribution of diffuse reflectance. [1/sr].*/
+1                           # 1 save total diffuse reflectance. [-].*/
+1                           # 1 save 3D probability density in turbid media over x, y & z. [1/cm3].*/
+1                           # 1 save 2D probability density in turbid media over r & z. [1/cm3].*/
+1                           # 1 save 1D probability density over z. [1/cm].*/
+1                           # 1 save each layer's absorption probability. [-].*/
+1                           # 1 save total absorption probability. [-].*/
+1                           # 1 save 2D distribution of total transmittance. [1/(cm2 sr)].*/
+1                           # 1 save 1D radial distribution of transmittance. [1/cm2].*/
+1                           # 1 save transmittance for each detector. [1/cm2].*/
+1                           # 1 save 1D angular distribution of transmittance. [1/sr].*/
+1                           # 1 save total transmittance. [-].*/
+1                           # 1 save tracing of photons that detected.*/
+1                           # 1 save PPL.*/

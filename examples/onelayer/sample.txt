@@ -1,0 +1,57 @@
+# User time:      363 sec =     6.05 min.   Simulation time of this run (user).
+
+# clock:      363 sec =     6.06 min.   Simulation time of this run (clock).
+
+InParm 			# Input parameters. cm is used.
+10000000 			# No. of photons
+17182818 			# No. of photons
+0.1	0.1	0.1	0.1# dx, dy, dz, dr [cm]
+1.000	1.000	1.000	# size of x, y and z.
+
+0.000	0.000	0.000	# source position
+0.000	0.000	1.000	# source direction
+source type is fiber
+
+7	0.100	0.220		# Number, raduis and NA of detectors
+
+1					# Number of layers
+#n	mua	mus	g	d	# One line for each layer
+1					# n for medium above
+1.37	0.1	100	0.9	1	# layer 1
+1					# n for medium below
+
+RAT #Reflectance, absorption, transmission. 
+0.0243729      	#Specular reflectance [-]
+0.607615       	#Diffuse reflectance [-]
+0.269054       	#Absorbed fraction [-]
+0.0989579      	#Transmittance [-]
+
+PPL (cm)
+
+Detector(1)		Layer(1)	3.263	No. of Phothons(3105)
+Detector(2)		Layer(1)	7.025	No. of Phothons(442)
+Detector(3)		Layer(1)	10.764	No. of Phothons(115)
+Detector(4)		Layer(1)	14.093	No. of Phothons(27)
+Detector(5)		Layer(1)	19.928	No. of Phothons(8)
+Detector(6)		Layer(1)	15.780	No. of Phothons(1)
+Detector(7)		Layer(1)	14.616	No. of Phothons(1)
+
+Recorded reflected photons in each detector
+
+Detector(1)		 7.2486E-003
+Detector(2)		 7.4269E-004
+Detector(3)		 1.3652E-004
+Detector(4)		 2.3821E-005
+Detector(5)		 4.1567E-006
+Detector(6)		 6.3316E-007
+Detector(7)		 7.2899E-007
+
+Recorded transmited photons in each detector
+
+Detector(1)		 2.9455E-002
+Detector(2)		 8.5355E-003
+Detector(3)		 2.0008E-003
+Detector(4)		 4.2466E-004
+Detector(5)		 8.5339E-005
+Detector(6)		 2.0101E-005
+Detector(7)		 3.9877E-006

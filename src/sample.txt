@@ -1,0 +1,60 @@
+# User time:        5 sec =     0.08 min.   Simulation time of this run (user).
+
+# clock:        5 sec =     0.08 min.   Simulation time of this run (clock).
+
+InParm 			# Input parameters. cm is used.
+100000 			# No. of photons
+17182818 			# RNG seed
+0.1	0.1	0.1	0.1# dx, dy, dz, dr [cm]
+1.500	1.500	1.500	# size of x, y and z.
+
+0.000	0.000	0.000	# source position
+0.000	0.000	1.000	# source direction
+source type is fiber
+
+8	0.100	0.220		# Number, raduis and NA of detectors
+
+1					# Number of layers
+#n	mua	mus	g	d	# One line for each layer
+1					# n for medium above
+1.37	0.2	100	0.9	1.5	# layer 1
+1					# n for medium below
+
+RAT #Reflectance, absorption, transmission. 
+0.0243729      	#Specular reflectance [-]
+0.521129       	#Diffuse reflectance [-]
+0.437878       	#Absorbed fraction [-]
+0.0166194      	#Transmittance [-]
+
+PPL (cm)
+
+Detector(1)		Layer(1)	0.566	No. of Phothons(294)
+Detector(2)		Layer(1)	3.726	No. of Phothons(66)
+Detector(3)		Layer(1)	5.543	No. of Phothons(16)
+Detector(4)		Layer(1)	8.448	No. of Phothons(3)
+Detector(5)		Layer(1)	7.940	No. of Phothons(10)
+Detector(6)		Layer(1)	13.074	No. of Phothons(3)
+Detector(7)		Layer(1)	8.129	No. of Phothons(2)
+Detector(8)		Layer(1)	-1.#IO	No. of Phothons(0)
+
+Recorded reflected photons in each detector
+
+Detector(1)		 8.3987E-002
+Detector(2)		 1.4139E-002
+Detector(3)		 1.9597E-003
+Detector(4)		 2.3102E-004
+Detector(5)		 7.4720E-004
+Detector(6)		 9.0897E-005
+Detector(7)		 1.2607E-004
+Detector(8)		 0.0000E+000
+
+Recorded transmited photons in each detector
+
+Detector(1)		 3.9409E-003
+Detector(2)		 4.8569E-003
+Detector(3)		 4.0751E-003
+Detector(4)		 4.5553E-003
+Detector(5)		 2.5886E-003
+Detector(6)		 9.3219E-004
+Detector(7)		 1.3401E-004
+Detector(8)		 2.1327E-004
